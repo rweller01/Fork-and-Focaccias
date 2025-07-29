@@ -1,0 +1,132 @@
+/* Theme Import */
+@import url(/misc/uniElements/theme.css);
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*navbar CSS */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--primaryParagraphText);
+}
+
+.logo {
+  height: 5.5rem;
+  width: auto;
+  margin-right: 1rem;
+}
+
+.site-name {
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.2rem;
+  cursor: pointer;
+}
+
+.nav-links li a {
+  color: var(--primaryHeadingText);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links li a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.burgerIcon{
+  display: none;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 7rem;
+    right: 0.1px;
+    width: 100%;
+    display: none;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--primaryBackgroundColor);
+  }
+
+  .nav-links li {
+    padding: 2rem;
+    align-self: center;
+  }
+
+  .menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  /* Base burger icon */
+.burgerIcon {
+  width: 3.8vh;
+  height: 2.8vh;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.burgerIcon span {
+  display: block;
+  height: 0.5vh;
+  background: #333;
+  border-radius: 2px;
+  transition: all 0.6s ease;
+  position: relative;
+}
+
+  /* Transform into a cross */
+  #burgerIcon{
+    position: relative;
+  }
+
+  #menu-toggle:checked + .burgerIcon span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+  left: 1px;
+}
+
+#menu-toggle:checked + .burgerIcon span:nth-child(2) {
+  opacity: 0;
+  transition: all 0.0s ease;
+}
+
+#menu-toggle:checked + .burgerIcon span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: -8px;
+}
+}

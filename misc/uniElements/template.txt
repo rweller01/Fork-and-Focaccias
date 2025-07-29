@@ -1,0 +1,36 @@
+In header:
+<!-- Template copy&paste-->
+    <link rel="icon" type="image" href="/favicon.ico">
+    <link rel="stylesheet" href="/misc/uniElements/theme.css">
+    <script src="/misc/uniElements/navbar/navbar.js"></script>
+        <link rel="stylesheet" href="/misc/uniElements/navbar/navbar.css">
+
+    <script src="/misc/uniElements/footer/footer.js"></script>
+        <link rel="stylesheet" href="/misc/uniElements/footer/footer.css">
+
+    <script src="/misc/uniElements/contactForm/contactForm.js"></script>
+        <link rel="stylesheet" href="/misc/uniElements/contactForm/contactForm.css">
+        <script src="/misc/uniElements/contactForm/contactFormScript.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script src="/misc/uniElements/contactForm/contactFormSendEmail.js"></script>
+
+
+
+
+
+
+In body:
+    <section id="navbarTemplate"></section>
+    <section id="contactFormTemplate"></section>
+    
+
+    <section id="footerTemplate"></section>
+
+
+
+
+
+
+In CSS for color theme:
+/* Theme Import */
+@import url(/misc/uniElements/theme.css);

@@ -1,0 +1,104 @@
+/* Theme Import */
+@import url(/misc/uniElements/theme.css);
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+#footerBox{
+    min-height: 10vh;
+    border-top: solid 0.3vh var(--thirdHeadingText);
+    background-color: var(--thirdBackgroundColor);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 4vh;
+}
+
+.footerSplitBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+    padding-bottom: 1.3vh;
+    border-bottom: 0.3vh solid rgba(255, 255, 255, 0.6);
+}
+
+.box{
+    padding: 1.2vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#boxOne{
+    flex: 1 1 55vh;
+}
+
+#boxTwo, #boxThree{
+    flex: 1 1 15vh;
+    align-items: center;
+}
+
+.box h1{
+    font-weight: bold;
+    font-size: 2.5vh;
+    padding-bottom: 0.8vh;color: var(--thirdHeadingText);
+}
+
+#footerBox p{
+    font-size: 1.8vh;
+    color: var(--primaryBackgroundColor);
+}
+
+#boxTwo li, #boxTwo a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--primaryBackgroundColor);
+    font-size: 1.8vh;
+    padding-bottom: 0.75vh;
+    cursor: pointer;
+}
+
+#boxTwo a:hover{
+    text-decoration: underline;
+    font-size: 1.9vh;
+    font-weight: bold;
+}
+
+.socialBox{
+    background-color: var(--primaryBackgroundColor);
+    border-radius: 10px;
+    padding: 0.5vh;
+    margin-bottom: 0.8vh;
+}
+
+.socialLogo{
+    max-height: 2.5vh;
+    width: auto;
+    padding-right: 0.7vh;
+}
+
+.socialBox a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#socialText{
+    color: var(--primaryHeadingText) !important;
+    font-size: 1.6vh !important;
+    padding-right: 0.3vh;
+}
+
+#socialText:hover{
+    color: var(--primaryHeadingText);
+    text-decoration: underline;
+    font-size: 1.65vh !important;
+    font-weight: bold;
+}
+
+#copyright{
+    text-align: center;
+    padding-top: 2.5vh;
+}

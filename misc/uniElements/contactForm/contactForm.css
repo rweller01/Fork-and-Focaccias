@@ -1,0 +1,131 @@
+/* Theme Import */
+@import url(/misc/uniElements/theme.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Contact Form */
+#contactForm{
+            /* Center content */  
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+            /* Position */  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+            /* Shadow */  
+    background-color: var(--shadowBackgroundColor);
+        /* Pop-up effect*/
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.contactOuterBox{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 65vw;
+    min-height: 80vh;
+    background-color: var(--primaryBackgroundColor);
+}
+
+        /* Close contact form button (X) */
+.closeX{
+    position: fixed;
+    top: 12vh;
+    right: 19vw;
+    cursor: pointer;
+    font-size: 3.1vh;
+    color: var(--primaryParagraphText);
+}
+
+.closeX:hover{
+    font-weight: bold;
+    font-size: 3.5vh;
+}
+
+.contactBoxOne, .contactBoxTwo{
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4vh;
+    
+}
+
+.contactBoxOneImg{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.contactFormHeading{
+    color: var(--primaryHeadingText);
+}
+
+/* Contact Form Inputs */
+.contactForm{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.contactFormInputs{
+    margin: 0.5vh;
+    background-color: rgb(222, 222, 222);
+    border-radius: 2vh;
+    min-height: 4.5vh;
+
+        /* Icons for inputs */
+    background-size: 2vh 2vh; /* width height */
+    background-repeat: no-repeat;
+    background-position: 0.7vh center;
+    padding-left: 5vh;
+}
+
+#message::placeholder{
+    padding-top: 1.2vh;
+}
+
+        /* Icons for inputs links */
+#firstName, #lastName{
+    background-image: url('/misc/imgs/otherImg/personIcon.svg');
+}
+
+#email{
+    background-image: url('/misc/imgs/otherImg/emailIcon.svg');
+}
+
+#phoneNumber{
+    background-image: url('/misc/imgs/otherImg/phoneIcon.svg');
+}
+
+#message{
+    background-image: url('/misc/imgs/otherImg/messageIcon.svg');
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contactFormButton{
+    background-color: var(--secondaryHeadingText);
+    border-radius: 2vh;
+    margin: 1vh 4vh;
+    padding: 1vh;
+    color: var(--primaryBackgroundColor);
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 670px) {
+    .contactBoxOne{
+        display: none;
+    }
+}

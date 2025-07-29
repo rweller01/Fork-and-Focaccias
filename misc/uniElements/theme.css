@@ -1,0 +1,16 @@
+/* Default Theme */
+:root{
+    --primaryBackgroundColor: #ffffff;
+    --primaryHeadingText: #f7a2a1;
+    --primaryParagraphText: #000000;
+
+    --secondaryBackgroundColor: #f7a2a1;
+    --secondaryHeadingText: #fcd8dc;
+    --secondaryParagraphText: #ffffff;
+
+    --thirdBackgroundColor: #32363a;
+    --thirdHeadingText: #fcd8dc;
+    --thirdParagraphText: #f7a2a1;
+
+    --shadowBackgroundColor: rgba(20, 20, 20, 0.808);
+}

@@ -1,0 +1,16 @@
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <circle r="64" id="circle" fill="#000000" cy="64" cx="64.22695"/>
+  <polyline points="54,29 89,29 89,99 39,99 39,44  " id="paper" fill="#FFFFFF"/>
+  <rect y="66" x="49" width="30" id="line_2_" height="4" fill="#E6E6E6"/>
+  <rect y="74" x="49" width="30" id="line_1_" height="4" fill="#E6E6E6"/>
+  <rect y="58" x="49" width="15" id="line" height="4" fill="#E6E6E6"/>
+  <polyline points="54,29 54,44 39,44  " id="triangle" fill="#B3B3B3"/>
+ </g>
+</svg>
