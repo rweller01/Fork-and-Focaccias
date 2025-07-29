@@ -1,0 +1,148 @@
+/* Theme Import */
+@import url(/misc/uniElements/theme.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Menu Intro */
+.menuIntro{
+    width: 100vw;
+    min-height: 25vh;
+    padding: 5vh;      /* top, right, bottom, left */
+    background-color: var(--primaryBackgroundColor);
+    display: flex;
+    flex-direction: column;      
+    justify-content: center;
+}
+
+.menuIntro h1{
+    align-self: center;
+    font-size: 4vh;
+    padding-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primaryHeadingText);
+}
+
+.menuIntro p{
+    align-self: center;
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primaryParagraphText);
+    padding: 0vh 6vw;      /* top, right, bottom, left */
+}
+
+/* Products Grid */
+#products{
+    width: 100vw;
+    min-height: 90vh;
+    padding: 5vh;
+    background-color: var(--secondaryBackgroundColor);  
+    
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    flex: 1 1 100%;
+    gap: 3vh;
+    justify-content: center;
+}
+
+.itemBox{
+    background-color: var(--primaryBackgroundColor);
+    height: 68vh;
+    max-width: 40vh;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 0.8vh;
+}
+
+.itemImgBox{
+    background-color: #d4d4d4;
+    width: 40vh;
+    height: 27vh;
+}
+
+.itemImg{
+    width: 40vh;
+    height: 27vh;
+}
+
+.itemDescription{
+    padding: 3.3vh ;
+
+}
+
+.itemTextSpacing{
+    padding-bottom: 1.2vh;
+}
+
+.itemCategory{
+    font-weight: 100;
+    font-size: 1.8vh;
+    color: var(--primaryHeadingText);
+}
+
+.itemName{
+    font-size: 2.8vh;
+    font-weight: 600;
+    color: var(--primaryHeadingText);
+}
+
+.itemInfo{
+    font-weight: 100;
+    font-size: 2vh;
+    color: var(--primaryParagraphText);
+
+    padding-bottom: 2.6vh;
+    border-bottom: 0.3vh solid var(--thirdHeadingText);    /* width | style | color */
+}
+
+.itemPrice{
+    padding-top: 2.6vh;
+    font-weight: 900;
+    font-size: 2vh;
+    color: var(--secondaryHeadingText);
+}
+
+/* Products span exclusive/new */
+.newItem{
+    background-color: #e54b22;
+    width: 4vh;
+    height: 2vh;
+    border-radius: 0.3vh;
+
+    color: var(--secondaryParagraphText);
+
+    position: absolute;
+    margin: 1vh 0vh 0vh 0vh;     /* top, right, bottom, left */
+
+    display: flex;
+    justify-content: center;
+}
+
+.limitedItem{
+    background-color: #fdd62c;
+    width: 9vh;
+    height: 2vh;
+    border-radius: 0.3vh;
+
+    color: #e54b22;
+
+    position: absolute;
+    margin: 3.12vh 0vh 0vh 0vh;     /* top, right, bottom, left */
+
+    display: flex;
+    justify-content: center;
+}
+
+.itemSpanText{
+    font-size: 1.3vh;
+    font-weight: 100;
+    align-self: center;
+}
