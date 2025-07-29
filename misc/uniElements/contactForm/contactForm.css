@@ -1,5 +1,5 @@
 /* Theme Import */
-@import url(/misc/uniElements/theme.css);
+@import url(misc/uniElements/theme.css);
 
 *{
     margin: 0;
@@ -97,19 +97,19 @@
 
         /* Icons for inputs links */
 #firstName, #lastName{
-    background-image: url('/misc/imgs/otherImg/personIcon.svg');
+    background-image: url('misc/imgs/otherImg/personIcon.svg');
 }
 
 #email{
-    background-image: url('/misc/imgs/otherImg/emailIcon.svg');
+    background-image: url('misc/imgs/otherImg/emailIcon.svg');
 }
 
 #phoneNumber{
-    background-image: url('/misc/imgs/otherImg/phoneIcon.svg');
+    background-image: url('misc/imgs/otherImg/phoneIcon.svg');
 }
 
 #message{
-    background-image: url('/misc/imgs/otherImg/messageIcon.svg');
+    background-image: url('misc/imgs/otherImg/messageIcon.svg');
     font-family: Arial, Helvetica, sans-serif;
 }
 

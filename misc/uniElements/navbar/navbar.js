@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('/misc/uniElements/navbar/navbar.html')
+  fetch('misc/uniElements/navbar/navbar.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('navbarTemplate').innerHTML = data;
