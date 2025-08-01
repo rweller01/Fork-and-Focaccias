@@ -1,3 +1,6 @@
+/* Theme Import */
+@import url(/misc/uniElements/theme.css);
+
 *{
     margin: 0;
     padding: 0;
@@ -17,6 +20,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 9999;
             /* Shadow */  
     background-color: var(--shadowBackgroundColor);
         /* Pop-up effect*/
@@ -31,6 +35,7 @@
     min-width: 65vw;
     min-height: 80vh;
     background-color: var(--primaryBackgroundColor);
+    border-radius: 1vh;
 }
 
         /* Close contact form button (X) */
@@ -88,26 +93,23 @@
     padding-left: 5vh;
 }
 
-#message::placeholder{
-    padding-top: 1.2vh;
-}
-
         /* Icons for inputs links */
 #firstName, #lastName{
-    background-image: url('misc/imgs/otherImg/personIcon.svg');
+    background-image: url('/misc/imgs/otherImg/personIcon.svg');
 }
 
 #email{
-    background-image: url('misc/imgs/otherImg/emailIcon.svg');
+    background-image: url('/misc/imgs/otherImg/emailIcon.svg');
 }
 
 #phoneNumber{
-    background-image: url('misc/imgs/otherImg/phoneIcon.svg');
+    background-image: url('/misc/imgs/otherImg/phoneIcon.svg');
 }
 
 #message{
-    background-image: url('misc/imgs/otherImg/messageIcon.svg');
+    background-image: url('/misc/imgs/otherImg/messageIcon.svg');
     font-family: Arial, Helvetica, sans-serif;
+    padding: 1.4vh 5vh;
 }
 
 #contactFormButton{
@@ -118,6 +120,13 @@
     color: var(--primaryBackgroundColor);
 }
 
+#contactFormButton:hover{
+    background-color: var(--secondaryBackgroundColor);
+}
+
+.errorBorder{
+    border: solid 0.4vh red;
+}
 
 
 /* Responsive styles */

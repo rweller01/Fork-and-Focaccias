@@ -1,5 +1,5 @@
 /* Theme Import */
-@import url(misc/uniElements/theme.css);
+@import url(/misc/uniElements/theme.css);
 
 /* Reset default styles */
 * {

@@ -5,22 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Menu</title>
-    <link rel="stylesheet" href="testimonials.css">
+    <link rel="stylesheet" href="/testimonials.css">
 
-<!-- Template copy&paste-->
-    <link rel="icon" type="image" href="favicon.ico">
-    <link rel="stylesheet" href="misc/uniElements/theme.css">
-    <script src="misc/uniElements/navbar/navbar.js"></script>
-        <link rel="stylesheet" href="misc/uniElements/navbar/navbar.css">
+    <!-- Template copy&paste-->
+    <link rel="icon" type="image" href="/favicon.ico">
+    <link rel="stylesheet" href="/misc/uniElements/theme.css">
+    <script src="/misc/uniElements/navbar/navbar.js"></script>
+    <link rel="stylesheet" href="/misc/uniElements/navbar/navbar.css">
 
-    <script src="misc/uniElements/footer/footer.js"></script>
-        <link rel="stylesheet" href="misc/uniElements/footer/footer.css">
+    <script src="/misc/uniElements/footer/footer.js"></script>
+    <link rel="stylesheet" href="/misc/uniElements/footer/footer.css">
 
-    <script src="misc/uniElements/contactForm/contactForm.js"></script>
-        <link rel="stylesheet" href="misc/uniElements/contactForm/contactForm.css">
-        <script src="misc/uniElements/contactForm/contactFormScript.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-        <script src="misc/uniElements/contactForm/contactFormSendEmail.js"></script>
+    <script src="/misc/uniElements/contactForm/contactForm.js"></script>
+    <link rel="stylesheet" href="/misc/uniElements/contactForm/contactForm.css">
+    <script src="/misc/uniElements/contactForm/contactFormScript.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "RpkKrY0QzeMVsgJjP",
+            });
+        })();
+    </script>
+    <script src="/misc/uniElements/contactForm/contactFormSendEmail.js"></script>
 </head>
 <body>
     <section id="navbarTemplate"></section>
@@ -33,22 +41,37 @@
 
     <section id="testimonialsEnteries">
         <div id="testimonialsGrid">
+            <!-- Add new review -->
+            <div class="testimonialsBox" id="reviewCentre" onclick="openContactForm()">     
+                <div class="testimonialsDescription">    
+                      <!-- Add button here then shadown out  -->
+                    <div id="addReview">
+                        <svg class="addReviewImg" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M 27.9999 51.9063 C 41.0546 51.9063 51.9063 41.0781 51.9063 28 C 51.9063 14.9453 41.0312 4.0937 27.9765 4.0937 C 14.8983 4.0937 4.0937 14.9453 4.0937 28 C 4.0937 41.0781 14.9218 51.9063 27.9999 51.9063 Z M 27.9999 47.9219 C 16.9374 47.9219 8.1014 39.0625 8.1014 28 C 8.1014 16.9609 16.9140 8.0781 27.9765 8.0781 C 39.0155 8.0781 47.8983 16.9609 47.9219 28 C 47.9454 39.0625 39.0390 47.9219 27.9999 47.9219 Z M 27.9296 39.1328 C 29.1952 39.1328 29.9452 38.2656 29.9452 36.9063 L 29.9452 29.9688 L 37.2812 29.9688 C 38.5936 29.9688 39.5077 29.2890 39.5077 28.0469 C 39.5077 26.7812 38.6405 26.0547 37.2812 26.0547 L 29.9452 26.0547 L 29.9452 18.6953 C 29.9452 17.3125 29.1952 16.4688 27.9296 16.4688 C 26.6874 16.4688 26.0077 17.3594 26.0077 18.6953 L 26.0077 26.0547 L 18.6952 26.0547 C 17.3124 26.0547 16.4452 26.7812 16.4452 28.0469 C 16.4452 29.2890 17.3827 29.9688 18.6952 29.9688 L 26.0077 29.9688 L 26.0077 36.9063 C 26.0077 38.2188 26.6874 39.1328 27.9296 39.1328 Z"></path></g></svg>
+                        <h2 class="testimonialsName testimonialsTextSpacing">Add Your Own Review</h2>   <!-- Persons Name -->
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Review 1 -->
             <div class="testimonialsBox" id="">     <!-- Change ID name for person-->
-                <img src="misc/imgs/otherImg/quoteMarks.svg" alt="Quote Marks" class="quoteMarks">
+                <?xml version="1.0"?><svg class="quoteMarks" height="48px" version="1.1" viewBox="0 0 48 48" width="48px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g id="Artboard-Copy" transform="translate(-347.000000, -9.000000)"><path d="M352.377,27.8345 C352.631,28.6105 353.066,29.3245 353.676,29.9645 C354.313,30.6365 355.15,31.1585 356.19,31.5325 C357.225,31.9055 358.559,32.0975 360.205,32.0975 L362.438,32.0975 C362.17,34.8405 361.191,37.1775 359.502,39.1095 C357.813,41.0375 355.469,42.7305 352.475,44.1845 L354.289,46.9995 C358.234,45.3205 361.606,42.8655 364.406,39.6195 C367.209,36.3735 368.602,33.1555 368.602,29.9645 C368.602,26.5365 367.795,23.8485 366.164,21.9065 C364.533,19.9655 362.199,19.0015 359.158,19.0015 C357.234,19.0015 355.557,19.6415 354.135,20.9265 C352.711,22.2115 352,23.7145 352,25.4295 C352,26.2535 352.127,27.0585 352.377,27.8345 M372.775,27.8345 C373.027,28.6105 373.465,29.3245 374.072,29.9645 C374.711,30.6365 375.549,31.1585 376.584,31.5325 C377.623,31.9055 378.957,32.0975 380.602,32.0975 L382.832,32.0975 C382.566,34.8405 381.588,37.1775 379.898,39.1095 C378.207,41.0375 375.867,42.7305 372.871,44.1845 L374.688,46.9995 C378.631,45.3205 382.004,42.8655 384.805,39.6195 C387.606,36.3735 389,33.1555 389,29.9645 C389,26.5365 388.191,23.8485 386.561,21.9065 C384.932,19.9655 382.598,19.0015 379.557,19.0015 C377.629,19.0015 375.955,19.6415 374.533,20.9265 C373.109,22.2115 372.398,23.7145 372.398,25.4295 C372.398,26.2535 372.522,27.0585 372.775,27.8345" fill="var(--secondaryHeadingText)" id="quote1"/><g id="slices" transform="translate(47.000000, 9.000000)"/></g></g></svg>
                 <div class="testimonialsImgBox">     <!-- Img size needs to be 1365 × 2048-->
-                    <img src="" alt="" class="testimonialsImg">     <!-- Change Image & alt text-->
+                    <img src="/misc/imgs/otherImg/personIcon.svg" alt="" class="testimonialsImg">     <!-- Change Image & alt text-->
                 </div>
                 
                 <div class="testimonialsDescription">      <!-- Modify description -->
                     <p class="testimonialsReview testimonialsTextSpacing">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, laboriosam! Aspernatur accusantium saepe qui esse quisquam nam ipsa quibusdam quaerat consectetur alias temporibus in, autem, repellendus maiores quis voluptatibus ducimus?</p>
                     <h2 class="testimonialsName testimonialsTextSpacing">Person Name</h2>   <!-- Persons Name -->
-                    <p class="testimonialsCategory testimonialsTextSpacing">Family/Purchaser</p>   <!-- Family or Purchaser -->
-                    
+                    <p class="testimonialsCategory testimonialsTextSpacing">Family/Purchaser</p>   <!-- Family or Purchaser & date of r/v -->                
                 </div>
             </div>
+
+
         </div>
     </section>
 
     <section id="footerTemplate"></section>
 </body>
 </html>
+

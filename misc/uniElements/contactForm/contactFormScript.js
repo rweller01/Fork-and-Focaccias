@@ -14,5 +14,5 @@ function closeForm() {
 
     setTimeout(() => {
         document.getElementById("contactForm").style.display = "none";
-    }, 500);
+    }, 400);
 }

@@ -1,5 +1,5 @@
 /* Theme Import */
-@import url(misc/uniElements/theme.css);
+@import url(/misc/uniElements/theme.css);
 
 * {
   margin: 0;
@@ -119,4 +119,31 @@
     text-align: center;
     padding-bottom: 2.6vh;
     color: var(--primaryParagraphText);
+}
+
+#reviewCentre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#addReview{
+    display: flex;
+    justify-content: center;  /* Horizontal centering */
+    align-items: center;      /* Vertical centering */
+    height: 100%;             /* Ensure it fills the parent */
+    width: 100%;    
+    flex-direction: column;
+}
+
+#reviewCentre:hover{
+    background-color: var(--shadowBackgroundColor);
+}
+
+.addReviewImg{
+    height: 30vh;
+    width: auto;
+
+    fill: var(--secondaryHeadingText);
+    stroke: var(--);
 }

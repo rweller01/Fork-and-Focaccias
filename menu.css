@@ -1,5 +1,5 @@
 /* Theme Import */
-@import url(misc/uniElements/theme.css);
+@import url(/misc/uniElements/theme.css);
 
 * {
   margin: 0;
@@ -58,8 +58,35 @@
     background-color: var(--primaryBackgroundColor);
     height: 68vh;
     max-width: 40vh;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    border-radius: 0.8vh;
+    border-radius: 1vh;
+    position: relative;
+}
+
+.itemBox:hover {
+  box-shadow: 0 0 2.5vh var(--shadowBackgroundColor);
+}
+
+.hoverEffect{
+    opacity: 0;
+    z-index: 9999;
+}
+
+.hoverEffect:hover{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 1;
+    background-color: var(--shadowBackgroundColor);
+}
+
+.hoverEffect svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#Icon-Set{
+    fill: var(--primaryBackgroundColor);
 }
 
 .itemImgBox{
@@ -145,4 +172,133 @@
     font-size: 1.3vh;
     font-weight: 100;
     align-self: center;
+}
+
+
+/* Popup box */
+#menuProductPopups{
+        /* Center content */  
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+        /* Position */  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 800;
+        /* Shadow */  
+    background-color: var(--shadowBackgroundColor);
+        /* Pop-up effect*/
+    display: none; 
+    opacity: 0; /* change to 0 */
+    transition: opacity 0.5s ease;
+}
+
+.menuProductBox{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    max-width: 85%;
+    min-height: 80vh;
+    background-color: var(--primaryBackgroundColor);
+    border-radius: 1vh;
+}
+
+.popupItem{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemImageDisplay, .itemPopupDescription{
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+}
+
+.imageDisplay{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0vh 4vh; 
+    display: none;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.imageDisplayActive{
+    display: flex;
+}
+
+.imagePreviousButton, .imageNextButton{
+    fill: var(--secondaryHeadingText);
+    width: 6vh;
+    height: auto;
+    padding: 0vh 1vh;
+}
+
+.imagePreviousButton:hover, .imageNextButton:hover{
+    fill: var(--primaryHeadingText);
+}
+
+.imagePreviousButton{
+    transform: rotate(180deg);
+    position: fixed;
+    top: 50vh;
+    left: 8vw;
+}
+
+.imageNextButton{
+    position: fixed;
+    top: 50vh;
+    left: 46vw;
+}
+
+.itemPopupDescription{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: center;
+    margin: 5vh 0vh;
+}
+
+.itemDescriptionSpacing{
+    padding: 2.2vh 0vh;
+}
+
+.menuCloseX{
+    position: fixed;
+    top: 12vh;
+    right: 12vw;
+    cursor: pointer;
+    font-size: 3.1vh;
+    color: var(--primaryParagraphText);
+}
+
+.menuCloseX:hover{
+    font-weight: bold;
+    font-size: 3.5vh;
+}
+
+.orderEnquireButton{
+    margin-top: 5vh;
+    padding: 1.5vh 6vh;
+    border-radius: 5vh;
+    background-color: var(--secondaryHeadingText);
+    cursor: pointer;
+}
+
+.orderEnquireButton:hover{
+    background-color: var(--primaryHeadingText);
+    font-weight: bold;
 }

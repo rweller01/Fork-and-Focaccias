@@ -1,3 +1,6 @@
+/* Theme Import */
+@import url(/misc/uniElements/theme.css);
+
 /* Reset default styles */
 * {
   margin: 0;
@@ -9,6 +12,10 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body.no-scroll{
+  overflow: hidden !important;
+}
+
 /*navbar CSS */
 
 .navbar {
@@ -17,6 +24,7 @@ body {
   justify-content: space-between;
   padding: 10px 20px;
   position: relative;
+  z-index: 9999;
 }
 
 .brand {
@@ -71,11 +79,13 @@ body {
     position: absolute;
     top: 7rem;
     right: 0.1px;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     display: none;
     padding: 10px;
     border-radius: 8px;
     background-color: var(--primaryBackgroundColor);
+    
   }
 
   .nav-links li {

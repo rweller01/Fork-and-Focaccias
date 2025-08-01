@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-fetch('misc/uniElements/footer/footer.html')
+fetch('/misc/uniElements/footer/footer.html')
     .then(response => response.text())
     .then(data => {
     document.getElementById('footerTemplate').innerHTML = data;

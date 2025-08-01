@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-fetch('misc/uniElements/contactForm/contactForm.html')
+fetch('/misc/uniElements/contactForm/contactForm.html')
     .then(response => response.text())
     .then(data => {
     document.getElementById('contactFormTemplate').innerHTML = data;
